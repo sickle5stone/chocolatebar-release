@@ -1,0 +1,97 @@
+name: Bug report
+description: Something in ChocolateBar isn't behaving correctly.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. The more specific you can be, the faster this gets fixed.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, what you were doing, and what you expected to happen instead.
+      placeholder: "I clicked the Slack icon in the strip and nothing happened. I expected the Slack menu to open."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps so we can hit the same bug.
+      placeholder: |
+        1. Launch ChocolateBar
+        2. Open Slack
+        3. Click the Slack icon in the strip
+        4. Nothing happens
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: ChocolateBar version
+      description: Find this in Settings → General → About.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: macos-version
+    attributes:
+      label: macOS version
+      options:
+        - macOS 15 Sequoia
+        - macOS 14 Sonoma
+        - macOS 13 Ventura
+        - Other (mention below)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: chip
+    attributes:
+      label: Apple Silicon chip
+      options:
+        - M1
+        - M1 Pro
+        - M1 Max
+        - M1 Ultra
+        - M2
+        - M2 Pro
+        - M2 Max
+        - M2 Ultra
+        - M3
+        - M3 Pro
+        - M3 Max
+        - M4
+        - M4 Pro
+        - M4 Max
+        - Other (mention below)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: notch
+    attributes:
+      label: Does your Mac have a notch?
+      options:
+        - "Yes (14\" or 16\" MacBook Pro, 15\" MacBook Air)"
+        - "No (external display, Mac mini, older Mac)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag images or short screen recordings here. Often the fastest way to diagnose.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Anything else?
+      description: Console logs, related apps running, recent system changes — anything you think might help.

@@ -1,0 +1,66 @@
+name: App compatibility
+description: A specific app's icon doesn't render or click correctly in the strip.
+title: "[App]: <app name> — "
+labels: ["compatibility"]
+body:
+  - type: input
+    id: app-name
+    attributes:
+      label: Which app?
+      placeholder: "e.g. 1Password, Slack, Tailscale, iStat Menus"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: "e.g. 1Password 8.10.42"
+
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: What's wrong?
+      options:
+        - Icon doesn't appear in the strip at all
+        - Icon appears but clicking does nothing
+        - Icon appears but clicking opens the wrong menu
+        - Icon is wrong (blank, generic, wrong artwork)
+        - Icon flickers or disappears intermittently
+        - Other (describe below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Anything specific — does the real menu bar icon still work? Does it happen every time or sometimes?
+    validations:
+      required: true
+
+  - type: input
+    id: chocolatebar-version
+    attributes:
+      label: ChocolateBar version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: macos-version
+    attributes:
+      label: macOS version
+      options:
+        - macOS 15 Sequoia
+        - macOS 14 Sonoma
+        - macOS 13 Ventura
+        - Other (mention below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: A picture of the menu bar + strip is invaluable for compatibility bugs.
