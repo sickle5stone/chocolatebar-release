@@ -1,18 +1,19 @@
-# ChocolateBar
+# ChocolateBar — Issue Tracker
 
 > See the menu bar icons your notch is hiding.
 
 **ChocolateBar** is a native macOS utility that adds a second row below your menu bar. The icons macOS pushes behind the notch show up there — and so do your open application windows. Click one and the real thing opens.
 
-🌐 **Website**: [chocolatebar.app](https://chocolatebar.app)
-💬 **Issues & feature requests**: [github.com/sickle5stone/chocolatebar-release/issues](https://github.com/sickle5stone/chocolatebar-release/issues)
-📧 **Email**: [support@chocolatebar.app](mailto:support@chocolatebar.app)
+🌐 **Get ChocolateBar**: [chocolatebar.app](https://chocolatebar.app) — this is the only place to download.
+💬 **Report a bug or request a feature**: [open an issue](https://github.com/sickle5stone/chocolatebar-release/issues/new/choose)
+📧 **Private support / licensing**: [support@chocolatebar.app](mailto:support@chocolatebar.app)
 
-> This is the **public issue tracker and release page**. The source code lives in a private repository. File bugs, request features, and discuss ChocolateBar here.
+> **About this repository**
+> This repo is the **public issue tracker** for ChocolateBar. It contains no source code and no downloadable binaries. ChocolateBar is closed-source commercial software; the codebase is private. The app itself is distributed exclusively from [chocolatebar.app](https://chocolatebar.app).
 
 ---
 
-## What it does
+## What ChocolateBar does
 
 - **Hidden icons, surfaced.** A second row beneath your menu bar that never hides. Every status item, in one glance.
 - **Open windows, one click.** Active application windows live in the same strip. No Cmd-Tab roulette, no Dock detour.
@@ -31,8 +32,10 @@
 
 ## Install
 
-1. Download the latest DMG from [chocolatebar.app](https://chocolatebar.app) or the [Releases page](https://github.com/sickle5stone/chocolatebar-release/releases).
-2. Double-click the DMG, drag **ChocolateBar.app** to your Applications folder.
+Download ChocolateBar from [chocolatebar.app](https://chocolatebar.app). After the DMG downloads:
+
+1. Double-click the DMG to mount it.
+2. Drag **ChocolateBar.app** to your Applications folder.
 3. Launch ChocolateBar.
 4. Grant Accessibility permission when prompted — this is how the app reads and clicks your existing menu bar items.
 
@@ -66,6 +69,6 @@ ChocolateBar runs entirely on your Mac. No telemetry, no analytics, no network c
 
 ## License
 
-ChocolateBar is commercial software. The source code is private. This repository exists solely for public issue tracking and release distribution.
+ChocolateBar is commercial software. The source code is private. This repository exists solely for public issue tracking — it does not contain source or binaries.
 
 Copyright © 2026 Aloysius Lim. All rights reserved.
