@@ -63,10 +63,6 @@ The templates ask for your macOS version, chip, and the app(s) involved — plea
 
 ChocolateBar runs entirely on your Mac. No telemetry, no analytics, no network calls except to check for updates. The Accessibility API is used only to enumerate menu bar items and active windows on your own machine, and to click them when you ask.
 
-## Refund policy
-
-14 days, no forms. Email [support@chocolatebar.app](mailto:support@chocolatebar.app) and you'll get a refund the same day.
-
 ## License
 
 ChocolateBar is commercial software. The source code is private. This repository exists solely for public issue tracking — it does not contain source or binaries.
