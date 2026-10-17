@@ -1,8 +1,8 @@
 # ChocolateBar — Issue Tracker
 
-> A second row for your Mac menu bar. See every icon, switch windows, or hide the clutter.
+> Every menu bar app in one row, one shortcut away.
 
-**ChocolateBar** is a native macOS menu bar manager. It shows the menu bar icons your Mac hides (behind the notch or off a crowded bar), full size, in a second row below the menu bar, alongside your open app windows. Click one and the real thing opens. Prefer a clean bar? Hide mode tucks the clutter away instead.
+**ChocolateBar** is a native macOS menu bar manager. Press ⇧⌘B, or click the ChocolateBar menu bar icon, and every menu bar app shows at full size in a row below the menu bar, including the ones behind the notch. Click one and that app's real menu opens. Works with or without a notch. Apple's system icons are optional.
 
 🌐 **Get ChocolateBar**: [chocolatebar.app](https://chocolatebar.app) — this is the only place to download.
 💬 **Report a bug or request a feature**: [open an issue](https://github.com/sickle5stone/chocolatebar-release/issues/new/choose)
@@ -15,13 +15,12 @@
 
 ## What ChocolateBar does
 
-- **A second row of full-size icons.** Everything macOS hid behind the notch or pushed off the bar, visible and clickable in a strip below the menu bar. Lay it out wide, or as a column down one side. Works with or without a notch.
-- **Open windows, one click.** Your open app windows sit in the same strip. No Cmd-Tab roulette, no Dock detour.
-- **Hide mode.** Rather keep the bar clean? Tuck third-party icons away and peek at them when you need them.
-- **Real clicks, real menus.** Clicking an icon triggers the real menu bar item via the macOS Accessibility API.
-- **Profiles.** Save different setups (for example work and home) and switch with a hotkey.
-- **Zero configuration.** Auto-detects new menu bar items and windows the moment apps add them. Install, grant, done.
-- **Private by design.** Accessibility permission only, never Screen Recording. No telemetry, no accounts.
+- **Every menu bar app, one shortcut away.** The row opens when you press ⇧⌘B or click the ChocolateBar menu bar icon. Every menu bar app shows at full size, including the ones behind the notch. Apple's system icons are optional. Works with or without a notch. Auto-hide is optional and off by default.
+- **Real menus.** Click an icon and you get that app's real menu, via the macOS Accessibility API.
+- **Mirror by default.** Icons stay in the menu bar and also show in the row. **Enable Hide Menubar Items** (Settings → General, off by default) hides icons left of the | divider.
+- **Where it sits.** Pin the row to the top or bottom, on the left, middle, or right, and nudge it with the offset sliders.
+- **Profiles.** Save a settings snapshot (layout, density, theme, hidden icons, order, position, auto-hide, custom icons) and switch in one click. Profiles don't launch apps.
+- **Running apps, optional.** ChocolateBar can show running apps, one chip per app. This is off by default: Settings → General → **Show running apps**, or press ⌃⌘S.
 
 ## System requirements
 
@@ -36,10 +35,10 @@
 ## Pricing
 
 **$15 USD, one-time.** Includes 1 year of updates; the app keeps working after that. Use it on every Mac you own. 7-day refund, no forms.
-<!-- {LAUNCH10} --> First 10 buyers pay $10 with code `LAUNCH10`.
-<!-- {TRIAL} --> 48-hour free trial, full features, no card needed.
 
-Licenses bought before one-year terms were introduced keep lifetime updates.
+48-hour free trial, full features, no card needed.
+
+Licenses bought before 0.6.0 (16 Oct 2026) keep lifetime updates. Licenses from 0.6.0 include one year of updates.
 
 ## Install
 
@@ -74,7 +73,7 @@ The templates ask for your macOS version, chip, and the app(s) involved — plea
 
 ## Privacy
 
-ChocolateBar runs entirely on your Mac. No telemetry, no analytics, no accounts. It contacts chocolatebar.app only when you check for updates. The Accessibility API is used only to list menu bar items and open windows on your own machine, and to click them when you ask. ChocolateBar never requests Screen Recording permission.
+ChocolateBar runs on your Mac. No telemetry. It never requests Screen Recording permission. Licensed users check `version.json` when they click to check for updates, or once a day if **Notify me** is on (off by default). Clicking Download requests `/update-check`. The Accessibility API is used only to list menu bar items on your own machine, and to click them when you ask.
 
 ## License
 
